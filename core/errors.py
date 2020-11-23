@@ -1,0 +1,2 @@
+class GoogleError(Exception):
+    pass
