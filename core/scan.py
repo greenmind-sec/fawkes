@@ -4,6 +4,7 @@ from vulls.sqli import Sqli
 
 from colorama import init
 from termcolor import colored
+from multiprocessing.dummy import Pool as ThreadPool
 
 # use Colorama to make Termcolor work on Windows too
 init(autoreset=True)
@@ -35,6 +36,8 @@ class Scan(Filter):
         print(colored("-" * 79, "grey"))
 
         sqli = Sqli()
+        pool = ThreadPool(10)
 
-        for link in links:
-            sqli.check_vull(link, self.args.verbose)
+        pool_exec = pool.map(sqli.check_vull, links_parsed)
+        pool.close()
+        pool.join()
