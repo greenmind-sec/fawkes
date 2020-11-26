@@ -45,6 +45,12 @@ class Cli:
                             default=1,
                             required=False)
 
+        parser.add_argument('-th',
+                            '--threads',
+                            type=int,
+                            default=1,
+                            required=False)
+
         parser.add_argument('-v',
                             '--verbose',
                             action="store_true",
