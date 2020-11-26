@@ -9,6 +9,9 @@ init(autoreset=True)
 
 
 class Sqli:
+    def __init__(self, verbose):
+        self._verbose = verbose
+
     def _insert_sqli_payloads(self, url):
         parser_url = urlparse(url)
 

@@ -35,8 +35,8 @@ class Scan(Filter):
         print(colored(f"Number of targets: {len(links_parsed)}", 'green'))
         print(colored("-" * 79, "grey"))
 
-        sqli = Sqli()
-        pool = ThreadPool(10)
+        sqli = Sqli(self.args.verbose)
+        pool = ThreadPool(self.args.threads)
 
         pool_exec = pool.map(sqli.check_vull, links_parsed)
         pool.close()
