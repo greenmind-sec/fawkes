@@ -21,9 +21,8 @@ class Scan(Filter):
             'num': self.args.results
         }
 
-        if self.args.engine == 'google' or self.args.engine == 'google.com':
-            req = GoogleSearch(params=params, timeout=self.args.timeout)
-            response = req.request()
+        req = GoogleSearch(params=params, timeout=self.args.timeout)
+        response = req.request()
 
         return response
 
