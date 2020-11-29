@@ -2,7 +2,7 @@
 
 <p align="center">
   <h3 align="center">Fawkes</h3>
-  <p align="center">Fawkes is a tool to search for targets vulnerable to SQL Injection. Performs the search using search engines.</p>
+  <p align="center">Fawkes is a tool to search for targets vulnerable to SQL Injection. Performs the search using Google search engine.</p>
   <p align="center">
     <a href="https://twitter.com/0xdutra">
       <img src="https://img.shields.io/badge/twitter-@0xdutra-blue.svg">
