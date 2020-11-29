@@ -64,5 +64,5 @@ class Sqli:
             if self._check_error(response.text):
                 print(colored(f"[SUCCESS] - {url}", "yellow"))
 
-            if verbose:
+            if self._verbose:
                 print(colored(f"[ERROR] - {url}", "red"))
