@@ -18,7 +18,6 @@
 ## Options
 
 ```
-    -e, --engine     - Specifies the search engine to be used.
     -q, --query      - Dork that will be used in the search engine.
     -r, --results    - Number of results brought by the search engine.
     -s, --start-page - Home page of search results.
@@ -26,6 +25,6 @@
     -v, --verbose    - Enable verbosity.
 
 Examples:
-    python3 fawkes.py --engine google --query 'noticias.php?id=10' --timeout 3 --verbose
-    python3 fawkes.py --engine google --query 'admin.php?id=1' --timeout 3 --verbose
+    python3 fawkes.py --query 'noticias.php?id=10' --timeout 3 --verbose
+    python3 fawkes.py --query 'admin.php?id=1' --timeout 3 --verbose
 ```
