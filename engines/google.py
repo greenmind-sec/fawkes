@@ -1,5 +1,6 @@
 import requests
 import random
+import sys
 
 from core.errors import GoogleError
 from colorama import init
